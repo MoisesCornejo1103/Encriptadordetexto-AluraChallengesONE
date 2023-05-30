@@ -8,31 +8,37 @@
     <title>Challenger 1</title>
 </head>
 <body>
-    <div class="contenedor">
-        <div class="encriptador">
-            <textarea name="texto" id="texto" class="texto" cols="30" rows="10" placeholder="Ingresa el texto aquí!"></textarea>
+    <header>
+        <div class="contenedor">
+            <h1 class="titulo" id="titulo">Encriptador de texto</h1>
         </div>
-
-        <div class="terminos">
-            <p>Solo letras minúsculas y sin acento</p>
-        </div>
-
-        <div class="botones">
-            <button class="btn-encriptar" type="button" onclick="encriptar">Encriptar</button>
-
-            <button class="btn-desencriptar" type="button" onclick="desencriptar">Desencriptar</button>
-        </div>
-    </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div class="encriptador">
+                <textarea name="texto" id="texto" class="texto" cols="30" rows="10" placeholder="Ingresa el texto aquí!"></textarea>
+            </div>
     
-    <div class="contenedor">
-        <img src="" alt="" id="">
-
-        <div class="msj-encriptado" id="msj-encriptado">
-            <h2 id="titulo-msj">Ningún mensaje encontrado</h2>
-            <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+            <div class="terminos">
+                <p class="parrafo-terminos" id="parrafo-terminos">Solo letras minúsculas y sin acento</p>
+            </div>
+    
+            <div class="botones">
+                <button class="btn-encriptar" type="button" onclick="encriptar">Encriptar</button>
+                <button class="btn-desencriptar" type="button" onclick="desencriptar">Desencriptar</button>
+            </div>
         </div>
-    </div>
+
+        <div class="contenedor">
+            <img src="" alt="" id="">
+    
+            <div class="msj-encriptado" id="msj-encriptado">
+                <h2 id="titulo-msj" class="titulo-msj">Ningún mensaje encontrado</h2>
+                <p id="parrafo-msj" class="parrafo-msj">Ingresa el texto que deseas encriptar o desencriptar</p>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+            </div>
+        </div>
+    </main>
 </body>
 <script src="/Proyecto/js/index.js"></script>
 </html>
